@@ -1,8 +1,14 @@
 package mrzeeshandigital.outdoor.mrzeeshantrail.ui.composable.screen.checkout
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
@@ -14,6 +20,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusManager
 import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.unit.dp
+import mrzeeshandigital.outdoor.mrzeeshantrail.R
+import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import mrzeeshandigital.outdoor.mrzeeshantrail.ui.state.DataUiState
 import mrzeeshandigital.outdoor.mrzeeshantrail.ui.viewmodel.CheckoutViewModel
@@ -72,8 +83,57 @@ private fun CheckoutContent(
     onEmailChanged: (String) -> Unit,
     onPlaceOrderButtonClick: () -> Unit,
 ) {
-    Column(modifier = modifier) {
-
+    Column(
+        modifier = modifier.fillMaxSize().padding(20.dp),
+        verticalArrangement = Arrangement.spacedBy(14.dp),
+    ) {
+        Text(
+            text = "Reserve your gear",
+            style = MaterialTheme.typography.headlineMedium,
+        )
+        Text(
+            text = "Enter your collection details. We will hold the order in store for 24 hours.",
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+        CheckoutTextField(
+            input = customerFirstName,
+            onInputChange = onFirstNameChanged,
+            labelText = stringResource(R.string.wqlno_checkout_text_field_first_name),
+            modifier = Modifier.fillMaxWidth(),
+            keyboardOptions = KeyboardOptions(imeAction = ImeAction.Next),
+        )
+        CheckoutTextField(
+            input = customerLastName,
+            onInputChange = onLastNameChanged,
+            labelText = stringResource(R.string.wqlno_checkout_text_field_last_name),
+            modifier = Modifier.fillMaxWidth(),
+            keyboardOptions = KeyboardOptions(imeAction = ImeAction.Next),
+        )
+        CheckoutTextField(
+            input = customerEmail,
+            onInputChange = onEmailChanged,
+            labelText = stringResource(R.string.wqlno_checkout_text_field_email),
+            modifier = Modifier.fillMaxWidth(),
+            isError = isEmailInvalid,
+            keyboardOptions = KeyboardOptions(
+                keyboardType = KeyboardType.Email,
+                imeAction = ImeAction.Done,
+            ),
+            keyboardActions = KeyboardActions(onDone = { focusManager.clearFocus() }),
+        )
+        if (isEmailInvalid) {
+            Text(
+                text = "Enter a valid email address",
+                color = MaterialTheme.colorScheme.error,
+            )
+        }
+        Button(
+            onClick = onPlaceOrderButtonClick,
+            enabled = isButtonEnabled,
+            modifier = Modifier.fillMaxWidth().height(54.dp),
+        ) {
+            Text(stringResource(R.string.wqlno_button_confirm_order_label))
+        }
     }
 }
 

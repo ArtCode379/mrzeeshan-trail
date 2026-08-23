@@ -9,7 +9,7 @@
     <!--[APPSFLYER][AD_ID]-->
 
     <application
-        android:name=".SkeletonApplication"
+        android:name=".WQLNOApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -28,8 +28,7 @@
 
         <activity
             android:name=".MainActivity"
-            android:configChanges="screenLayout|orientation|screenSize
-|keyboard|keyboardHidden|smallestScreenSize"
+            android:configChanges="screenLayout|orientation|screenSize|keyboard|keyboardHidden|smallestScreenSize"
             android:exported="true"
             android:label="@string/wqlno_app_name"
             android:theme="@style/Theme.ProductAppSkeleton">

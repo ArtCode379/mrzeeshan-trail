@@ -5,7 +5,7 @@
     <string name="wqlno_price">£%1$.2f</string>
 
     <!-- top bar titles -->
-    <string name="wqlno_top_bar_home_title">Home/App Title</string>
+    <string name="wqlno_top_bar_home_title">MrZeeshan Trail</string>
     <string name="wqlno_top_bar_cart_title">Cart</string>
     <string name="wqlno_top_bar_checkout_title">Checkout</string>
     <string name="wqlno_top_bar_orders_title">Orders</string>
@@ -19,12 +19,12 @@
     <string name="wqlno_bottom_bar_nav_item_settings_title">Settings</string>
 
     <!-- onboarding screen -->
-    <string name="wqlno_page_1_title">Strategic Planning</string>
-    <string name="wqlno_page_2_title">Operational Excellence</string>
-    <string name="wqlno_page_3_title">Change Management</string>
-    <string name="wqlno_page_1_description">Comprehensive strategic analysis and planning that aligns your business objectives with market opportunities and organizational capabilities.</string>
-    <string name="wqlno_page_2_description">Process optimization and operational improvement strategies that enhance efficiency, reduce costs, and drive sustainable performance.</string>
-    <string name="wqlno_page_3_description">Expert guidance through organizational transformation</string>
+    <string name="wqlno_page_1_title">Ride Further</string>
+    <string name="wqlno_page_2_title">Camp Comfortably</string>
+    <string name="wqlno_page_3_title">Train Anywhere</string>
+    <string name="wqlno_page_1_description">Explore dependable bikes and trail essentials selected for every weekend route.</string>
+    <string name="wqlno_page_2_description">Find tents, sleeping systems and packs ready for nights under open skies.</string>
+    <string name="wqlno_page_3_description">Build your setup with practical fitness gear for home and outdoor sessions.</string>
     <string name="wqlno_next_button_title">Next</string>
     <string name="wqlno_start_button_title">Start</string>
     <string name="wqlno_skip_button_title">Skip</string>
@@ -57,16 +57,22 @@
 
     <!-- checkout dialog -->
     <string name="wqlno_checkout_dialog_title">Thank You for Your Order!</string>
-    <string name="wqlno_checkout_success_message">Your order has been successfully placed. Please hold on; our team will contact you shortly.</string>
+    <string name="wqlno_checkout_success_message">Your order is confirmed. We will hold it for collection in store for the next 24 hours.</string>
     <string name="wqlno_checkout_dialog_confirm">Done</string>
 
     <!-- settings screen -->
     <string name="wqlno_settings_screen_company_label">Company</string>
     <string name="wqlno_settings_screen_version_label">Version</string>
     <string name="wqlno_settings_screen_customer_support_label">Customer Support</string>
-    <string name="wqlno_company_name">Company Name</string>
-    <string name="wqlno_app_version">1.0.0</string>
-    <string name="wqlno_customer_support_link">https://website.org/</string>
+    <string name="wqlno_company_name">MR ZEESHAN DIGITAL LTD</string>
+    <string name="wqlno_app_version">1.0</string>
+    <string name="wqlno_customer_support_link">https://mrzeeshan-digital.surf</string>
+
+    <string name="wqlno_category_bikes">Bikes</string>
+    <string name="wqlno_category_fitness">Fitness</string>
+    <string name="wqlno_category_camping">Camping</string>
+    <string name="wqlno_category_backpacks">Backpacks</string>
+    <string name="wqlno_category_training">Training</string>
 
     <!-- clear cart dialog -->
     <string name="wqlno_clear_cart_dialog_title">Clear cart?</string>

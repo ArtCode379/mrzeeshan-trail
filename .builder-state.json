@@ -1,6 +1,6 @@
 {
-  "phase": "scaffold_cloned",
-  "updated_at": "2026-08-23T21:20:56.843006+00:00",
+  "phase": "github_push_started",
+  "updated_at": "2026-08-23T21:36:52.588229+00:00",
   "slug": "mrzeeshan-trail",
   "type": "shop",
   "package": "mrzeeshandigital.outdoor.mrzeeshantrail",
@@ -12,6 +12,15 @@
   "domain": "https://mrzeeshan-digital.surf",
   "company": "MR ZEESHAN DIGITAL LTD",
   "repo_url": "https://github.com/ArtCode379/mrzeeshan-trail",
-  "quality_status": "not_run",
-  "build_status": "not_run"
+  "quality_status": "passed",
+  "build_status": "passed",
+  "icon_primary": "#00796B",
+  "icon_status": "imagegen",
+  "icon_error": "generate-icon.sh exited 1",
+  "quality_attempt": 2,
+  "quality_errors": 0,
+  "quality_result_file": "/tmp/mrzeeshan-trail/quality-result.txt",
+  "build_exit_code": 0,
+  "build_result_file": "/tmp/mrzeeshan-trail/build-result.txt",
+  "build_attempt": 1
 }
